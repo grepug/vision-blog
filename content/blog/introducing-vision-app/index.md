@@ -1,28 +1,28 @@
 ---
-title: Introducing Vision App
+title: Introducing Vision App Part I, OKR Explained
 date: "2020-11-08T22:12:03.284Z"
 description: "Your first personal OKR manager with OKR explained"
 ---
 
 This is my first time writing my own product release note.
 
-I'm extreamly proud to tell that this is the fruit of my first ever OKR period. And it was impossible without the magic power of OKR. What is more magic is that the product Vision is an app for OKR management built with my experience.
+I'm extreamly proud to tell that the app is the fruit of my first ever OKR period. And it was impossible without the magic power of OKR. What is more magic is that the product Vision is exactly an app for OKR management built with my own experience.
 
 ## Met OKR
 
 Well, I was wondering what kind of this note should be looklike. I tried something really formal and official -- something went "What is Vision", and gave a definition of it before introducing the main concept of OKR, then tried to explain how useful it is.
 
-Finally, I gave it up. To be honest, I've never finished reading a single book about OKR. I've never been an expert on it. So I decided to tell my own real story about the journey of OKR instead.
+Finally, I gave it up. To be honest, I've never finished reading a single book about OKR. I've never been an expert on it. Instead I decided to explain by telling my own real story about the journey of OKR.
 
 I heared about OKR at my company, even though I was not part of the ones who were required to practice it. They took a top-down way to introduce OKR to the staffs at my company. And obviously, I'm a Web engineer from the lowest layer with no obligation to practice this for now.
 
-By then, I knew a little about OKR -- a kind of methodology for helping people get things done (GTD). "Probably like a todo list", I thought.
+By then, I knew little about OKR -- a kind of methodology for helping people get things done (GTD). "Probably like a todo list", I thought.
 
-I always love products of Apple. They may call me an Apple fan. As a developer, however, I've never written a single app for the Apple's platforms. That really has been a shame for me. I wanted to get something done with that dream. And I was reminded that maybe OKR was the savior in a Sunday afternoon at a Starbucks.
+I always love products of Apple. They may call me an Apple fan. As a developer, however, I've never written a single app for the Apple's platforms. That really has been a shame for me. I wanted to get something done with that dream. One day OKR suddenly occured to me, reminding me that maybe it was the savior.
 
-I texted a message to one of my collegues who was practicing OKR at company asked if OKR was suitable for personal use. She replied positively.
+I texted a message immediately to one of my collegues who was practicing OKR at company asked if OKR was suitable for personal use. She replied positively.
 
-I was delighted. And started to Google the keyword "personal OKR", finding one blog post which tremendously inspired me for implementing personal OKR. It was [How to set your Personal OKRs and stick to them ](https://medium.com/@jamsusmaximus/how-to-set-your-personal-okrs-and-stick-to-them-632acec44084). And I would like to put some highlight quotes below.
+I was delighted, and started googling the keyword "personal OKR", finding one blog post which tremendously inspired me for implementing personal OKR. It was [How to set your Personal OKRs and stick to them ](https://medium.com/@jamsusmaximus/how-to-set-your-personal-okrs-and-stick-to-them-632acec44084). And I would like to put some highlight quotes below.
 
 > OKRs stand for Objective Key Results, and they’re a goal-setting framework developed by the legendary Andy Grove when he was CEO of Intel. John Doerr then introduced them to Google and attributed much of Google’s success to the OKR framework, which has popularised the approach in recent years.
 
@@ -70,7 +70,7 @@ They just make a measurable and quantifieable OKR possible. And your biggest **m
 
 ### Measurement & Total Quantity
 
-Imagine an Objective "Keep fit" with two Key Results which are absent of these kinds of metrics -- "Run" and "Climb mountains", they simply **DON'T** tell you _how many kilometers should I run_ as "run", and _how many mountains I should climb_ as "climb mountains".
+Imagine an Objective "Keep fit" with two Key Results which lack of these kinds of metrics -- "Run" and "Climb mountains", they simply **DON'T** tell you _how many kilometers should I run_ as "run", and _how many mountains I should climb_ as "climb mountains".
 
 Let's modify them a little, something like "Run 30 kilometers", "Climb 2 mountains". Well, this modification lets these Key Results meet the first two kinds of metrics. And you can't be clearer that how you can finish them. Feel it!
 
@@ -80,9 +80,9 @@ You may not find it in other blog posts or books, however, I think it is one of 
 
 Also take the modified examples of "Run 30 kilometers" and "Climb 2 mountains". If you want to score for each kilometer you run, and for each mountain you climb, you may find that they **SHOULD NOT** be scored equally. That's to say, the effort you possibly make to run a kilometer is not equal to climb a giant mountain. This is exactly where _weight_ comes into play.
 
-Stil with the example, you can give "Run 30 kilometers" a weight of 30%, a weight of 70% to "Climb 3 mountains", depending on how difficult for you to finish them.
+Still with the example, you can give "Run 30 kilometers" a weight of 30%, a weight of 70% to "Climb 3 mountains", depending on how difficult for you to finish them.
 
-Like Key Results, Objectives also take weights. You may allocate more weight for your Objectives on career elevation, and a possiblely considerable weight for your fit keeping, if you always make difficult time exercising. In a nutshell, the weight is the powerful tool for you to design the Objectives as well as Key Results in the demensions of **importance** and **urgency**.
+Like Key Results, Objectives also take weights. You may allocate more weight to your Objectives on career elevation, and a possiblely considerable weight to your fit keeping, if you always make difficult time exercising. In a nutshell, the weight is the powerful tool for you to design the Objectives as well as Key Results in the demensions of **importance** and **urgency**.
 
 ### The Final Score
 
@@ -90,16 +90,17 @@ With the first 3 kinds of metrics in place, we can finally _calculate_ the Score
 
 _the sum of each Key Result's finished quantity / its total quantity \* its weight \* its Objective's weight_
 
-It may be a little hard to understand the formula for the first time, however, if you try to finish your Key Results, you'll see that the Score graduly increases. You'll feel a huge sense of achievement as you go. That's the ultimate weapon of OKR to "force" you keep going. You'll be addicted to it!
+It may be a little hard to understand the formula for the first time. However, if you try to finish your Key Results, you'll see that the Score gradually increases. You'll feel a huge sense of achievement as you go. That's the ultimate weapon of OKR to "force" you to keep going. You'll be addicted to it!
 
 ## Conclusion
 
-Even if it seems a little long to read, it really a tip of the iceberg of OKR. I've talked and explained what is my version of OKR, and the main concepts behind it. The kinds of metrics, the final Score come together really makes your OKR useful, and most important, to help you achieve your goals.
+Even if it seems a little long to read, it is really a tip of the iceberg of OKR. I've talked and explained what is my version of OKR, and the main concepts behind it. The kinds of metrics, the final Score come together really makes your OKR useful, and most importantly, helps you achieve your goals.
 
-In the next post, I'd like to
+In the following posts, I'd like to
 
+- talk how Vision came out
 - talk some tips on designing your first OKR
-- how to allocate weights for your Objectives and Key Results
-- and how to leverage weights and total quantities to design your Key Results in the demensions of importance and urgency.
+- show you how to allocate weights to your Objectives and Key Results
+- and show you how to leverage weights and total quantities to design your Key Results in the demensions of importance and urgency.
 
 Thank you. Hope the Vision app and this blog post are helpful.

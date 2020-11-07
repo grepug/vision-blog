@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Vison App`,
+    title: `Vision App`,
     author: {
       name: `Vision App dev team`,
       summary: ``,
