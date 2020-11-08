@@ -55,7 +55,7 @@ _Finish building one app with submitting to the App Store._
 
 also by the similiar way segmenting it into several Key Results
 
-## Quantifieable & Measurable
+## Measurability & Quantifiablity
 
 The main idea of designing your own ORK is that they should be **measurable** and **quantifieable**. Take a look at my examples above.
 
@@ -80,7 +80,7 @@ You may not find it in other blog posts or books, however, I think it is one of 
 
 Also take the modified examples of "Run 30 kilometers" and "Climb 2 mountains". If you want to score for each kilometer you run, and for each mountain you climb, you may find that they **SHOULD NOT** be scored equally. That's to say, the effort you possibly make to run a kilometer is not equal to climb a giant mountain. This is exactly where _weight_ comes into play.
 
-Still with the example, you can give "Run 30 kilometers" a weight of 30%, a weight of 70% to "Climb 3 mountains", depending on how difficult for you to finish them.
+Still with the example, you can give "Run 30 kilometers" a weight of 30%, a weight of 70% to "Climb 2 mountains", depending on how difficult for you to finish them.
 
 Like Key Results, Objectives also take weights. You may allocate more weight to your Objectives on career elevation, and a possiblely considerable weight to your fit keeping, if you always make difficult time exercising. In a nutshell, the weight is the powerful tool for you to design the Objectives as well as Key Results in the demensions of **importance** and **urgency**.
 
@@ -100,7 +100,6 @@ In the following posts, I'd like to
 
 - talk how Vision came out
 - talk some tips on designing your first OKR
-- show you how to allocate weights to your Objectives and Key Results
 - and show you how to leverage weights and total quantities to design your Key Results in the demensions of importance and urgency.
 
 Thank you. Hope the Vision app and this blog post are helpful.
