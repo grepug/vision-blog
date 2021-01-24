@@ -101,7 +101,7 @@ And this is where View Model comes into play.
 
 ## View Models
 
-View models are like a middle layer between the models (such as data from the server) and the views. They take any data source, such as data from the server, localStorage, or memory cache, as the input, and simply output the properties directly fit your views. Basically, view models are defined by `class`, so you can write any custom methods to transform your data as well as give any functionality accociate with them.
+View models are like a middle layer between the models (such as data from the server) and the views. They take any data source, such as data from the server, localStorage, or memory cache, as the input, and simply output the properties directly to fit your views. Basically, view models are defined by `class`, so you can write any custom methods to transform your data as well as give any functionalities accociate with them.
 
 Let's take a look.
 
@@ -150,7 +150,7 @@ class UserInfoViewModel {
     })
   }
 
-  constructor(props?: Partial<ItemViewModel>) {
+  constructor(props?: Partial<UserInfoViewModel>) {
     Object.assign(this, props)
   }
 }
@@ -191,21 +191,21 @@ function List() {
 
 function Item(props: { item: ItemViewModel }) {
   return (
-    <div>
+    <ItemContainer>
       <User userInfo={item.userInfo} />
       <Title>{item.firstLetterCapitalizedTitle}</Title>
       <Content>{item.content}</Content>
       <caption>{item.formattedDate}</caption>
-    </div>
+    </ItemContainer>
   )
 }
 ```
 
 ### Immutability
 
-You may notice that I marked every property in the view models with a `readonly`. Well, this has something to do with the approach of React to determine whether it should re-render the view. We know that, after we call `setState(newValue)`, React will shallow compare the previous value of the state is identical to the `newValue`. It will trigger a re-render if they are not identical.
+You may notice that I marked every property in the view models with a `readonly`. Well, this has something to do with the approach of React to determine whether it should re-render the view. We know that, after calling `setState(newValue)`, React will compare if the previous value of the state is identical to the `newValue`, triggering a re-render if they are not identical.
 
-However, objects including class instances in JavaScript are _referce type_, meaning that if you do this:
+However, objects including class instances in JavaScript are _referce types_, meaning that if you do this:
 
 ```tsx
 setState(object => {
@@ -214,9 +214,9 @@ setState(object => {
 })
 ```
 
-in fact, it won't make a _new Value_ for React in aspect of the shallow comparing, because reassigning a new property value to the `object`, wont't change the reference of `object`. Therefore, when it came to compare the previous and the new value of the `object`, it turned out to compare the **same reference**, which is always identical. Obviously, React won't think the state actually changed, following no re-render occured.
+in fact, it won't make a _new Value_ for React in aspect of the shallow comparing, because reassigning a new property value to the `object`, wont't change the reference of the `object`. Therefore, when it comes to compare the previous and the new value of the `object`, it turns out to compare the **same reference**, which is always identical. Obviously, React won't consider the state is actually changed, following no re-render occurs.
 
-Given this, we mark each property with `readonly`, just prevent us from accidentally changing the properties of the view model's instance. So how can we elegantly update our view models?
+Given this, we mark each property with `readonly`, just preventing us from accidentally changing the properties of the view model's instance. So how can we update our view models elegantly?
 
 We can simply implement a `set(props: Partial<ViewModel>): ViewModel` method to create a new instance of the view model:
 
@@ -236,11 +236,11 @@ Together with `setState(viewModel => ViewModel)`, we can:
 setState(item => item.set({ title: "New Title" }))
 ```
 
-Now, each call to set state, React can clearly figure out that our state is definitely changed, because the reference of the state is totally different.
+Now, each call to set state, React can clearly figure out that our state is definitely changed, because the reference of the previous state and the new state are totally different.
 
 ## Useful Helpers
 
-With the powerful custom React hooks and generics from TypeScript, we can build some useful helper hooks to handle our common operations on list state.
+With the powerful custom React hooks and generics from TypeScript, we can build some useful helper hooks to handle our common operations.
 
 #### `useImmutableState<State>(initialState: State)`
 
@@ -266,6 +266,18 @@ function useImmutableState<T extends Immutable<T> | undefined>(
 }
 ```
 
+Note that the interface `Immutable<T>` can be used to be `implement`ed by view model classes:
+
+```tsx
+class ItemViewModel implements Immutable<ItemViewModel> {
+  // ...
+}
+```
+
+Now, we have the compiler's guarantee that we did implement the `set(props: T): T` method on the view model.
+
+With `useImmutableState()`, we now are able to use it exactly like the ordinary `useState()`, even with more type safety.
+
 #### `useImmutableArrayState<State>(initialState: State)`
 
 ```tsx
@@ -275,13 +287,11 @@ function useImmutableArrayState<T extends Immutable<T>>(
   const [list, _setList] = useState(initialList)
 
   function setList(index: number, el: Partial<T>) {
-    _setList(list =>
-      update(list, {
-        [index]: {
-          $apply: (prev: Readonly<T>) => prev.set(el),
-        },
-      })
-    )
+    _setList(list => {
+      const newInstance = list[index].set(el)
+
+      return [...list.slice(0, index), newInstance, ...list.slice(index + 1)]
+    })
   }
 
   return [list, _setList, setList] as [
@@ -291,6 +301,8 @@ function useImmutableArrayState<T extends Immutable<T>>(
   ]
 }
 ```
+
+In terms of array mutations, we can simply replace the item in the array that we want to change with a new created item instance.
 
 ## Conclusion
 
