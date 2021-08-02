@@ -1,7 +1,7 @@
 ---
 title: Vision 七月月报
 date: "2021-07-31T07:15:07.198Z"
-description: "这个月我们发布了 2.1版本，以及对 2.2和 2.3的展望"
+description: "这个月我们发布了 2.1 版本，以及对 2.2 和 2.3 的展望"
 ---
 
 [vision - 个人 okr 管理]: https://apps.apple.com/app/id1572457968
