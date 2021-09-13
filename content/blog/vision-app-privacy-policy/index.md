@@ -8,10 +8,8 @@ We respect and protect your privacy. This privacy policy explains what type of i
 
 What information does Vision collect?
 
-None.
+No data except the puchase information will be collected by us, and will not link to the user's identity.
 
 How does Vision protect my privacy？
 
-1. Vision does not store data on servers.
-
-2. Vision does not share your personal information with third parties without your agreement.
+Vision does not share your any information with third parties without your agreement.
